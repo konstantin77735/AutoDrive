@@ -205,3 +205,169 @@ body{font-size:1.75rem;}
     text-align: center;
     padding: 10px;
   }
+
+  /* Бургер и мобильное меню */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.burger-menu__icon,
+.burger-menu__icon::before,
+.burger-menu__icon::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.burger-menu__icon {
+  position: relative;
+}
+
+.burger-menu__icon::before,
+.burger-menu__icon::after {
+  position: absolute;
+  width: 100%;
+}
+
+.burger-menu__icon::before {
+  top: -8px;
+}
+
+.burger-menu__icon::after {
+  bottom: -8px;
+}
+
+/* Показываем бургер на планшетах и мобилках */
+@media (max-width: 1024px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #333;
+    padding: 10px 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  .nav__link {
+    margin: 10px 0;
+    font-size: 2.2rem;
+  }
+
+  .nav.nav_open {
+    display: flex;
+  }
+
+  .header__container {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+}
+
+/* Адаптив основного контента */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 5rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+
+  .car {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .car__image,
+  .car__image_big {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .car__description {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .car_second .car__description {
+    order: 1;
+    margin: 0;
+  }
+
+  .form {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .form__button {
+    width: 100%;
+  }
+
+  .about__text {
+    max-width: 100%;
+    font-size: 2.5rem;
+  }
+
+  .contact {
+    height: auto;
+  }
+
+  .about {
+    align-items: flex-start;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .car__name {
+    font-size: 5rem;
+  }
+
+  .car__description-line {
+    font-size: 2.5rem;
+  }
+
+  .about__title,
+  .contact__title {
+    font-size: 4.5rem;
+  }
+
+  .about__text {
+    font-size: 2.2rem;
+  }
+}

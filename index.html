@@ -8,7 +8,12 @@
 <body class="page">
   <header class="header">
     <div class="container header__container">
+
       <h1 class="header__title">AutoDrive</h1>
+      <div class="burger-menu">
+        <div class="burger-menu__icon"></div>
+      </div>
+
       <nav class="nav">
         <a class="nav__link" href="#home">Главная</a>
         <a class="nav__link" href="#catalog">Каталог</a>
@@ -79,5 +84,16 @@
   <footer class="footer">
     <p class="footer__text">&copy; 2025 AutoDrive</p>
   </footer>
+
+  <script>
+    const burger = document.querySelector('.burger-menu');
+    const nav = document.querySelector('.nav');
+  
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav_open');
+    });
+  </script>
+  
+
 </body>
 </html>
