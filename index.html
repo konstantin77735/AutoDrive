@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoDrive — Магазин машин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+  <header class="header">
+    <div class="container header__container">
+      <h1 class="header__title">AutoDrive</h1>
+      <nav class="nav">
+        <a class="nav__link" href="#home">Главная</a>
+        <a class="nav__link" href="#catalog">Каталог</a>
+        <a class="nav__link" href="#about">О нас</a>
+        <a class="nav__link" href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container main__container">
+    <section class="hero" id="home">
+      <h2 class="hero__title title">Найдите свой <br/> идеальный автомобиль</h2>
+      <p class="hero__subtitle subtitle">Продажа новых и поддержанных <br/> автомобилей с гарантией.</p>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="catalog__list">
+        <div class="car car_first">
+          <img class="car__image car__image_big" src="img/camry.webp" alt="Toyota Camry">
+          <div class="car__description">
+            <h3 class="car__name">Toyota Camry</h3>
+            <div class="car__description-lines">
+             <span class="car__description-line car__description-line_first">Год: 2020</span>
+             <span class="car__description-line">Пробег: 40 000 км</span>
+             <span class="car__description-line">Коробка передач: ручная</span>
+             <span class="car__description-line">Топливо: бензин</span>
+            </div>
+          </div>
+        </div>
+        <div class="car car_second">
+          <img class="car__image car__image_big" src="img/solaris.webp" alt="Hyundai Solaris">
+            <div class="car__description">
+                <h3 class="car__name">Hyundai Solaris</h3>
+              <div class="car__description-lines">
+                <span class="car__description-line car__description-line_first">Год: 2015</span>
+                <span class="car__description-line">Пробег: 25 000 км</span>
+                <span class="car__description-line">Коробка передач: автомат</span>
+                <span class="car__description-line">Топливо: дизель</span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="about__title">О нас</h2>
+      <p class="about__text">AutoDrive работает с 2010 года. Мы предлагаем только проверенные авто с гарантией, возможностью рассрочки и обменом по Trade-in.
+
+Каждый автомобиль проходит тщательную диагностику и подготовку перед продажей. Мы заботимся о безопасности и комфорте наших клиентов, поэтому вы можете быть уверены в техническом состоянии выбранного авто.
+
+Мы предлагаем прозрачные условия покупки: фиксированные цены, помощь в оформлении документов и поддержку на всех этапах сделки. Для вашего удобства доступны онлайн-бронирование и дистанционный осмотр.
+Наша команда – это профессионалы с опытом в подборе и продаже автомобилей. Мы всегда готовы ответить на ваши вопросы и подобрать оптимальное решение под ваш бюджет и потребности.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="contact__title">Связаться с нами</h2>
+      <form class="form">
+        <label class="form__label">Имя: <input class="form__input" type="text" name="name"></label>
+        <label class="form__label">Телефон: <input class="form__input" type="tel" name="phone"></label>
+        <label class="form__label">Сообщение: <textarea class="form__textarea" name="message"></textarea></label>
+        <button class="form__button" type="submit">Отправить</button>
+      </form>
+    </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">&copy; 2025 AutoDrive</p>
+  </footer>
+</body>
+</html>
